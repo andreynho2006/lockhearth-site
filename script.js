@@ -27,8 +27,8 @@
     const caption = frame.querySelector("figcaption");
     const captions = [
       caption.textContent,
-      "The hearth of a Breton home around 1900. The papers lived by the fire.",
-      "An iron key, about 1500 to 1600. One key, kept close.",
+      "The hearth of a Breton village home around 1900.",
+      "An iron key from about 1500 to 1600, Rijksmuseum.",
     ];
     let i = 0, timer = null;
     const step = () => {
