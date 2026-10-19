@@ -7,8 +7,7 @@
 .top .wordmark { color: var(--on-bg); }
 .top nav { display: flex; gap: 28px; align-items: center; }
 .top nav a { text-decoration: none; }
-.top nav a:hover { text-decoration: underline; text-decoration-color: var(--accent); }
-.top .button { min-height: 44px; padding: 0 18px; }
+.top nav a:not(.button):hover { text-decoration: underline; text-decoration-color: var(--accent); }
 
 .story { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
 .chapters { padding: 0 var(--margin); }

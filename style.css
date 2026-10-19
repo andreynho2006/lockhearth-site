@@ -61,19 +61,35 @@ p { margin: 0; }
 .skip:focus { top: var(--margin); }
 .num { font-variant-numeric: tabular-nums; }
 
-/* Buttons: one shape, square, one fill. */
+/* Buttons: one shape, a full pill, iOS-style press and a sliding chevron. */
 .button {
-  display: inline-flex; align-items: center; justify-content: center;
-  min-height: 56px; padding: 0 28px;
-  background: var(--ink); color: var(--paper);
-  font: inherit; font-weight: 500; text-decoration: none;
-  border: 0; cursor: pointer;
-  transition: transform 160ms var(--ease), background-color 160ms var(--ease), color 160ms var(--ease);
+  --b-bg: var(--ink); --b-fg: var(--paper);
+  display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+  min-height: 52px; padding: 0 26px 0 28px; border-radius: 999px;
+  background: var(--b-bg); color: var(--b-fg);
+  font: inherit; font-size: 17px; font-weight: 600; letter-spacing: -0.01em; text-decoration: none;
+  border: 0; cursor: pointer; -webkit-tap-highlight-color: transparent;
+  transition: transform 380ms cubic-bezier(0.34, 1.56, 0.64, 1), background-color 200ms var(--ease), color 200ms var(--ease);
 }
-.button:hover { background: var(--accent); color: var(--accent-ink); }
-.button:active { transform: translateY(2px); }
-.button--amber { background: var(--accent); color: var(--accent-ink); }
-.button--amber:hover { background: var(--paper); color: var(--ink); }
+.button::after {
+  content: ""; width: 7px; height: 7px; flex: none;
+  border-top: 2px solid currentColor; border-right: 2px solid currentColor;
+  transform: rotate(45deg); margin-left: -2px;
+  transition: transform 260ms var(--ease);
+}
+.button, .button:hover { text-decoration: none; }
+.button:hover::after { transform: translateX(3px) rotate(45deg); }
+.button:hover { background: color-mix(in srgb, var(--b-bg) 88%, white); }
+.button:active { transform: scale(0.96); transition-duration: 120ms; }
+.button:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+.button--amber { --b-bg: var(--accent); --b-fg: var(--accent-ink); }
+.button--amber:hover { background: color-mix(in srgb, var(--accent) 86%, white); }
+.button--tinted { --b-bg: color-mix(in srgb, var(--accent) 16%, transparent); --b-fg: var(--accent); }
+.button--tinted:hover { background: color-mix(in srgb, var(--accent) 26%, transparent); }
+.button--ink-tinted { --b-bg: color-mix(in srgb, var(--ink) 12%, transparent); --b-fg: var(--ink); }
+.button--ink-tinted:hover { background: color-mix(in srgb, var(--ink) 20%, transparent); }
+.button--small { min-height: 40px; padding: 0 16px 0 18px; font-size: 15px; }
+.button--plain::after { display: none; }
 
 /* The kit stripe: alternating ink and paper bars, the header of every printed sheet. */
 .stripe {
@@ -383,6 +399,8 @@ p { margin: 0; }
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .button, .button::after { transition: none; }
+  .button:active { transform: none; }
   html { scroll-behavior: auto; }
   .js .reveal { opacity: 1; transform: none; transition: none; }
   .hero__frame img { transition: none; }
