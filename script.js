@@ -20,6 +20,27 @@
   }, { threshold: 0.12 });
   groups.forEach((_, host) => io.observe(host));
 
+  // Signature: the app screen beside the story changes with each chapter.
+  const stage = document.querySelector("[data-stage]");
+  if (stage) {
+    const screens = [...stage.querySelectorAll(".screen")];
+    const show = (name) => screens.forEach((s) => s.classList.toggle("is-on", s.dataset.name === name));
+    const chapters = [...document.querySelectorAll(".chapter[data-screen]")];
+    chapters.forEach((ch) => {
+      const slot = ch.querySelector(".inline");
+      const src = screens.find((s) => s.dataset.name === ch.dataset.screen);
+      if (slot && src) {
+        const copy = src.cloneNode(true);
+        copy.classList.add("is-on"); copy.removeAttribute("role"); copy.removeAttribute("aria-label");
+        slot.appendChild(copy);
+      }
+    });
+    const watch = new IntersectionObserver((entries) => {
+      entries.forEach((e) => { if (e.isIntersecting) show(e.target.dataset.screen); });
+    }, { rootMargin: "-45% 0px -45% 0px" });
+    chapters.forEach((ch) => watch.observe(ch));
+  }
+
   // Signature: the hero picture changes slowly, like light shifting in a room.
   const frame = document.querySelector("[data-crossfade]");
   if (frame && !reduce) {
