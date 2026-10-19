@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lockhearth: a safe place for your family's papers</title>
+<meta name="description" content="An encrypted vault for your family's passports, medical papers, photos and videos on iPhone, iPad, Mac and Apple Watch. No account, no ads. Coming to the App Store in early 2027.">
+<meta name="theme-color" content="#1c1714">
+<link rel="icon" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preload" href="fonts/bricolage-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="hero">
+  <div class="hero__card">
+    <div class="stripe" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+    <div class="hero__body">
+      <a class="wordmark" href="./" aria-label="Lockhearth home">
+        <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M8 18 20 7l12 11v15H8z" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linejoin="round"/><path d="M20 15c-3.6 3.4-5 6.6-5 9.2 0 3 2.2 5.2 5 5.2s5-2.2 5-5.2c0-2.6-1.4-5.8-5-9.2z" fill="#e8862f"/></svg>
+        Lockhearth
+      </a>
+      <h1>Family papers, kept safe</h1>
+      <p class="hero__lead">Passports, medical records, photos and videos, encrypted on your devices and synced through your own iCloud. No account to create, no ads, nobody else holding a key.</p>
+      <a class="button" href="#back-in">See how you get back in</a>
+      <p class="hero__when">Coming to the App Store in early 2027 for iPhone, iPad, Mac and Apple Watch.</p>
+    </div>
+    <nav class="hero__links" aria-label="Sections">
+      <a href="#kit">The family kit</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#questions">Questions</a>
+    </nav>
+  </div>
+  <div class="hero__media">
+    <figure class="hero__frame" data-crossfade>
+      <img class="is-on drift" src="assets/deed-box.jpg" width="1920" height="1093" alt="A carved walnut deed box with an iron lock plate, dated 1605.">
+      <img class="drift" src="assets/hearth.jpg" width="405" height="410" alt="The hearth of a Breton village home around 1900, with a spinning wheel and a box bed." loading="lazy">
+      <img class="drift" src="assets/39-keys-from-the-collection-of-emmanuel.jpg" width="2000" height="1000" alt="An iron key from the sixteenth century with a pierced round bow." loading="lazy">
+      <figcaption class="hero__caption">Families have always kept their papers in one locked place near the hearth. A deed box, Italy, 1605.</figcaption>
+    </figure>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="section" id="back-in" aria-labelledby="back-in-h">
+  <div class="grid12">
+    <div class="intro reveal">
+      <h2 id="back-in-h">Back in, without us</h2>
+      <p>We cannot reset your password and we cannot open your vault. So Lockhearth makes sure you can get back in before it saves anything.</p>
+    </div>
+    <div class="slip-wrap reveal">
+      <div class="slip" role="group" aria-label="Recovery, step by step">
+        <h3>The first five minutes</h3>
+        <div class="row"><span class="what">Scan your first document</span><span class="leader"></span><span class="val">1 min</span></div>
+        <div class="row"><span class="what">Write 12 words on paper</span><span class="leader"></span><span class="val">2 min</span></div>
+        <div class="row"><span class="what">Type them back from the paper</span><span class="leader"></span><span class="val">2 min</span></div>
+        <div class="row"><span class="what">A test vault opens from your words</span><span class="leader"></span><span class="val">seconds</span></div>
+        <h3>Every month, on its own</h3>
+        <div class="row"><span class="what">Recovery check reads your iCloud copy</span><span class="leader"></span><span class="val">automatic</span></div>
+        <div class="row"><span class="what">Shows the date it last passed</span><span class="leader"></span><span class="val">on Home</span></div>
+        <h3>If you lose your iPhone</h3>
+        <div class="row"><span class="what">New iPhone, same Apple Account</span><span class="leader"></span><span class="val">vault returns</span></div>
+        <div class="row"><span class="what">Anything else: your 12 words</span><span class="leader"></span><span class="val">vault opens</span></div>
+        <div class="result"><span>Saved and recoverable</span><span class="num">about 5 min</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="plate" aria-label="Three ways back in">
+  <div class="split">
+    <div class="plate__img reveal">
+      <figure>
+        <img src="assets/hearth.jpg" width="405" height="410" alt="The hearth of a Breton village home around 1900." loading="lazy">
+        <figcaption>A Breton home around 1900. The papers lived by the fire.</figcaption>
+      </figure>
+    </div>
+    <div class="plate__text">
+      <div class="tabs reveal" role="tablist" aria-label="Ways back in">
+        <button role="tab" id="t-phrase" aria-controls="p-phrase" aria-selected="true">Your words</button>
+        <button role="tab" id="t-kit" aria-controls="p-kit" aria-selected="false" tabindex="-1">The kit</button>
+        <button role="tab" id="t-person" aria-controls="p-person" aria-selected="false" tabindex="-1">A trusted person</button>
+      </div>
+      <div class="reveal">
+        <div class="panel" role="tabpanel" id="p-phrase" aria-labelledby="t-phrase">
+          <h3>Twelve words on paper</h3>
+          <p>The phrase opens your vault on any device. You prove it works before your first save, and you can rehearse it again from Settings whenever you like.</p>
+        </div>
+        <div class="panel" role="tabpanel" id="p-kit" aria-labelledby="t-kit" hidden>
+          <h3>Three sheets, any two</h3>
+          <p>Print the family kit and keep the sheets in different places: one at home, one with a sibling, one in a drawer at work. Any two open the vault. One alone reveals nothing.</p>
+        </div>
+        <div class="panel" role="tabpanel" id="p-person" aria-labelledby="t-person" hidden>
+          <h3>Someone you choose</h3>
+          <p>A trusted person can ask for access in an emergency. Nothing opens until a waiting period you set has passed and you approve it. You can refuse at any time before then.</p>
+        </div>
+      </div>
+      <div class="cells reveal">
+        <a href="#kit">Try the kit</a>
+        <a href="#questions">Read the hard questions</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section kit" id="kit" aria-labelledby="kit-h">
+  <div class="grid12">
+    <div class="head reveal">
+      <h2 id="kit-h">Pick any two sheets</h2>
+      <p>This is the real two-of-three scheme the app uses, running in your browser on a sample secret. Choose one sheet and the vault stays shut. Choose any second sheet and it opens.</p>
+    </div>
+    <div class="sheets reveal" data-kit>
+      <button class="sheet" type="button" aria-pressed="false" data-x="1">
+        <span class="stripe" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span>
+        <span class="sheet__body">
+          <span class="sheet__name">Sheet 1 · Kept at home</span>
+          <span class="sheet__code" data-code>Printed code appears here</span>
+          <span class="sheet__state">Tap to choose</span>
+        </span>
+      </button>
+      <button class="sheet" type="button" aria-pressed="false" data-x="2">
+        <span class="stripe" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span>
+        <span class="sheet__body">
+          <span class="sheet__name">Sheet 2 · With your sister</span>
+          <span class="sheet__code" data-code>Printed code appears here</span>
+          <span class="sheet__state">Tap to choose</span>
+        </span>
+      </button>
+      <button class="sheet" type="button" aria-pressed="false" data-x="3">
+        <span class="stripe" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span>
+        <span class="sheet__body">
+          <span class="sheet__name">Sheet 3 · In the office drawer</span>
+          <span class="sheet__code" data-code>Printed code appears here</span>
+          <span class="sheet__state">Tap to choose</span>
+        </span>
+      </button>
+    </div>
+    <div class="vault reveal" data-vault aria-live="polite">
+      <svg class="vault__icon" viewBox="0 0 40 40" aria-hidden="true"><path d="M8 18 20 7l12 11v15H8z" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linejoin="round"/><path d="M20 15c-3.6 3.4-5 6.6-5 9.2 0 3 2.2 5.2 5 5.2s5-2.2 5-5.2c0-2.6-1.4-5.8-5-9.2z" fill="#e8862f"/></svg>
+      <p class="vault__text"><strong data-vault-title>The vault is shut</strong><span data-vault-detail>Choose two sheets. Without the script, the idea is the same: any two of the three printed sheets rebuild the key; one sheet alone is just noise.</span></p>
+    </div>
+    <p class="note reveal">The codes are made fresh each time you load this page. Real kit sheets carry a QR code and are made only on your device.</p>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="inside-h">
+  <div class="menu-wrap reveal">
+    <div class="menu">
+      <h2 id="inside-h">What's inside</h2>
+      <p>Free to start. Pro adds the family.</p>
+      <h3>Keep</h3>
+      <div class="row"><span class="what">Passports and IDs</span><span class="leader"></span><span class="val">Free</span></div>
+      <p class="desc">Scanned with the camera, text recognized on your iPhone.</p>
+      <div class="row"><span class="what">Photos and videos</span><span class="leader"></span><span class="val">Free</span></div>
+      <p class="desc">Ten videos free, unlimited and in original quality with Pro.</p>
+      <div class="row"><span class="what">Rooms for Medical, Home, Kids</span><span class="leader"></span><span class="val">Free</span></div>
+      <p class="desc">Up to 100 items in the free vault.</p>
+      <h3>Share</h3>
+      <div class="row"><span class="what">Family rooms</span><span class="leader"></span><span class="val">Pro</span></div>
+      <p class="desc">Each person sees only the rooms you share with them.</p>
+      <div class="row"><span class="what">A trusted person</span><span class="leader"></span><span class="val">Pro</span></div>
+      <p class="desc">Emergency access after a waiting period, with your approval.</p>
+      <div class="row"><span class="what">Mac, iPad and Apple Watch</span><span class="leader"></span><span class="val">Pro</span></div>
+      <p class="desc">The Watch keeps a medical card and upcoming expiry dates.</p>
+      <h3>Remember</h3>
+      <div class="row"><span class="what">Expiry radar</span><span class="leader"></span><span class="val">3 free</span></div>
+      <p class="desc">A reminder before a passport or insurance policy runs out.</p>
+      <div class="row"><span class="what">Monthly recovery check</span><span class="leader"></span><span class="val">Free</span></div>
+      <p class="desc">Proof that your iCloud copy still opens.</p>
+      <div class="row"><span class="what">Export everything</span><span class="leader"></span><span class="val">Always free</span></div>
+      <p class="desc">Your files leave with you, whenever you want.</p>
+    </div>
+  </div>
+</section>
+
+<section class="leave" aria-labelledby="leave-h">
+  <img src="assets/39-keys-from-the-collection-of-emmanuel.jpg" width="2000" height="1000" alt="" loading="lazy">
+  <div class="card reveal">
+    <h2 id="leave-h">What we leave out</h2>
+    <p>Six things other vault apps do that this one does not.</p>
+    <ul>
+      <li><strong>No account to create</strong><span>Your Apple Account is enough. We never learn your name or email.</span></li>
+      <li><strong>No ads, ever</strong><span>Not in the free version, not later.</span></li>
+      <li><strong>No analytics by default</strong><span>The app does not report what you store or how you use it.</span></li>
+      <li><strong>No server of ours holding your files</strong><span>They sit encrypted in your own iCloud.</span></li>
+      <li><strong>No way for us to open your vault</strong><span>Which is why recovery is set up before your first save.</span></li>
+      <li><strong>No hostage-taking</strong><span>If you stop paying, you can still read and export everything.</span></li>
+    </ul>
+  </div>
+  <p class="credit">An iron key, about 1500 to 1600. Rijksmuseum.</p>
+</section>
+
+<section class="section" id="pricing" aria-labelledby="pricing-h">
+  <div class="ticket-wrap">
+    <div class="ticket reveal">
+      <div class="ticket__main">
+        <div>
+          <h2 id="pricing-h">Lockhearth Pro</h2>
+          <p class="pitch">One purchase covers everyone in your Family Sharing group.</p>
+        </div>
+        <ul class="ticket__lines">
+          <li>Family Sharing, up to six people</li>
+          <li>Unlimited items and videos</li>
+          <li>Seven-day free trial on yearly</li>
+          <li>Rooms, trusted person, Mac and Watch</li>
+        </ul>
+      </div>
+      <div class="ticket__stub">
+        <p class="price num">$19.99<small>a year</small></p>
+        <p class="or num">or $39.99 once, for life</p>
+        <a class="button" href="#questions">Coming early 2027</a>
+      </div>
+    </div>
+    <div class="free reveal">
+      <h3>Free, for good</h3>
+      <p>100 items, 10 videos and 3 tracked expiry dates, with recovery, the monthly check and full export. Reading and exporting stay free even if you leave Pro.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section faq" id="questions" aria-labelledby="faq-h">
+  <div class="grid12">
+    <h2 class="heading reveal" id="faq-h">The hard questions</h2>
+    <div class="cards reveal" data-cards>
+      <div class="card-item" style="--i:0">
+        <span class="card-tab">Locked out</span>
+        <div class="card-body">
+          <button class="card-q" type="button" aria-expanded="true" aria-controls="a1"><span>Can you unlock my vault if I forget everything?</span><span aria-hidden="true">+</span></button>
+          <p class="card-a" id="a1">No. We never hold your keys, so there is nothing for us to reset. That is the point, and it is also the risk. Lockhearth asks you to prove your recovery works before it saves anything, checks your iCloud copy every month, and offers the printed kit and a trusted person as extra ways back.</p>
+        </div>
+      </div>
+      <div class="card-item" style="--i:1">
+        <span class="card-tab">New phone</span>
+        <div class="card-body">
+          <button class="card-q" type="button" aria-expanded="false" aria-controls="a2"><span>What happens when I get a new iPhone?</span><span aria-hidden="true">+</span></button>
+          <p class="card-a" id="a2" hidden>Sign in with the same Apple Account and turn on iCloud Keychain. Your vault key arrives through iCloud Keychain and your encrypted files through iCloud. If the key has not arrived, the app waits and shows that it is waiting. It never shows an empty vault as if your files were gone. Your 12 words open it either way.</p>
+        </div>
+      </div>
+      <div class="card-item" style="--i:2">
+        <span class="card-tab">Storage</span>
+        <div class="card-body">
+          <button class="card-q" type="button" aria-expanded="false" aria-controls="a3"><span>Where are my files stored?</span><span aria-hidden="true">+</span></button>
+          <p class="card-a" id="a3" hidden>On your devices and in your own iCloud, encrypted before they leave the device. Apple stores the encrypted data; neither Apple nor we can read it. Lockhearth has no server that receives your documents.</p>
+        </div>
+      </div>
+      <div class="card-item" style="--i:3">
+        <span class="card-tab">Paying</span>
+        <div class="card-body">
+          <button class="card-q" type="button" aria-expanded="false" aria-controls="a4"><span>What if I stop paying for Pro?</span><span aria-hidden="true">+</span></button>
+          <p class="card-a" id="a4" hidden>You keep everything. You can read, open and export every file. You just cannot add beyond the free limits or use family features until you renew. A lifetime purchase stays lifetime.</p>
+        </div>
+      </div>
+      <div class="card-item" style="--i:4">
+        <span class="card-tab">Lost words</span>
+        <div class="card-body">
+          <button class="card-q" type="button" aria-expanded="false" aria-controls="a5"><span>I lost the paper with my 12 words. Now what?</span><span aria-hidden="true">+</span></button>
+          <p class="card-a" id="a5" hidden>While you can still open the app, make a new phrase from Settings. The old one stops working for new data. If the paper may have been stolen, Lockhearth can also re-encrypt your vault so the old words open nothing.</p>
+        </div>
+      </div>
+      <div class="card-item" style="--i:5">
+        <span class="card-tab">Release</span>
+        <div class="card-body">
+          <button class="card-q" type="button" aria-expanded="false" aria-controls="a6"><span>When can I use it?</span><span aria-hidden="true">+</span></button>
+          <p class="card-a" id="a6" hidden>Lockhearth is in testing now and comes to the App Store in early 2027, on iPhone, iPad, Mac and Apple Watch at the same time.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="stripe" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+  <div class="foot__top">
+    <div class="foot__invite">
+      <p class="big">Keep them close</p>
+      <a class="button" href="#back-in">Start with recovery</a>
+    </div>
+    <figure class="foot__fire">
+      <video autoplay muted loop playsinline preload="metadata" poster="assets/aboedit2015-video-fire-poster.jpg" width="640" height="640" aria-label="A fire burning in a stone fireplace.">
+        <source src="assets/aboedit2015-video-fire.webm" type="video/webm">
+      </video>
+    </figure>
+    <nav class="foot__links" aria-label="Pages">
+      <a href="privacy.html">Privacy</a>
+      <a href="support.html">Support</a>
+      <a href="terms.html">Terms</a>
+    </nav>
+  </div>
+  <div class="foot__legal">
+    <p class="credits">Pictures: <a href="https://commons.wikimedia.org/w/index.php?curid=60173444">“Deed box”</a>, The Met, <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.en/">CC0</a>, via Wikimedia Commons; <a href="https://www.flickr.com/photos/70994841@N07/7899492072">“At grandmother's house, interior of a Breton village home, Crach, France, circa 1900”</a>, Underwood &amp; Underwood, <a href="https://creativecommons.org/publicdomain/mark/1.0/">public domain</a>, via Flickr; <a href="https://www.rijksmuseum.nl/en/collection/BK-KOG-2172">key from “39 keys from the collection of Emmanuel Vita Israël”</a>, Rijksmuseum, <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>; fire: <a href="https://commons.wikimedia.org/wiki/File:ABOedit2015-Video-Fire.webm">“ABOedit2015 Video Fire”</a>, <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.en">CC0</a>, via Wikimedia Commons.</p>
+    <p>© 2026 Lockhearth</p>
+  </div>
+  <p class="foot__name" aria-hidden="true">Lockhearth</p>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
